@@ -1,0 +1,9 @@
+To disable prompts that may come up as part of the update process, do the following:
+
+edit /etc/needrestart/needrestart.conf
+
+edit this line:
+"#$nrconf{restart} = 'a';"
+
+uncomment this line: 
+"#$nrconf{kernelhints} = -1;"
